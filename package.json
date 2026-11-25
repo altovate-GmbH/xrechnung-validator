@@ -54,7 +54,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "xrechnung-validator": "./dist/cli.js"
+    "xrechnung-validator": "dist/cli.js"
   },
   "files": [
     "dist",
