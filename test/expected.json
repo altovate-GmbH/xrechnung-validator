@@ -655,6 +655,39 @@
     "BR-TMP-7|warning"
    ]
   },
+  "test/fixtures/cii-iban-falsche-pruefsumme.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-19|warning",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-iban-gueltig-1.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-iban-gueltig-2.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-iban-gueltig-3.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
   "test/fixtures/cii-ohne-buyerref.xml": {
    "accept": false,
    "scenario": "EN16931 XRechnung (CII)",
@@ -741,6 +774,39 @@
    "scenario": "EN16931 XRechnung (UBL Invoice)",
    "schemaError": true,
    "messages": []
+  },
+  "test/fixtures/ubl-iban-falsche-pruefsumme.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-19|warning",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-iban-gueltig-1.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-iban-gueltig-2.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-iban-gueltig-3.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
   },
   "test/fixtures/ubl-ohne-buyerref.xml": {
    "accept": false,

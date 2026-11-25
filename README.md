@@ -37,7 +37,7 @@ XRechnung test suite plus deliberately broken invoices (`test/fixtures`). The tr
 |---|---|
 | Rules | KoSIT configuration v2026-08-31 (XRechnung 3.0.2, CEN rules 1.3.16) |
 | Reference | KoSIT validator 1.6.3 |
-| Test cases | 110, identical results in Node 24, Deno 2.9 and Bun 1.3 |
+| Test cases | 118, identical results in Node 24, Deno 2.9 and Bun 1.3 |
 | Syntaxes | UBL Invoice, UBL CreditNote, UN/CEFACT CII |
 | Specifications | XRechnung, XRechnung Extension, XRechnung CVD, plain EN 16931 |
 
@@ -109,6 +109,12 @@ The official Schematron rules are already XSLT. At build time they are compiled 
 (21 MB to 0.55 MB). At runtime [SaxonJS](https://www.saxonica.com/saxonjs/) executes them, and
 [libxml2-wasm](https://github.com/jameslan/libxml2-wasm) handles the XML schema check.
 Scenario selection and severity overrides are read from KoSIT's `scenarios.xml`.
+
+One rule needs a correction for JavaScript: the XRechnung IBAN check (`xr:checkIBAN`, used by
+BR-DE-19 and BR-DE-20) computes `mod 97` on a 20 to 40 digit number. SaxonJS loses precision on
+`xs:integer` values above 2^53, so the build switches that single conversion to `xs:decimal`,
+which SaxonJS computes exactly. The build fails if the patch does not apply exactly once.
+Regression fixtures with several IBANs cover it (`test/fixtures/*-iban-*.xml`).
 
 ## Updating to new KoSIT rules
 

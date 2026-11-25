@@ -1,6 +1,6 @@
 {
   "name": "xrechnung-validator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official KoSIT XRechnung / EN 16931 validation (XSD + Schematron) in pure JavaScript. No Java. Node, Deno, Bun, browser.",
   "main": "./dist/index.js",
   "scripts": {
@@ -61,7 +61,8 @@
     "rules",
     "NOTICE",
     "LICENSE",
-    "LICENSES"
+    "LICENSES",
+    "CHANGELOG.md"
   ],
   "engines": {
     "node": ">=18.17"

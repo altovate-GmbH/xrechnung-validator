@@ -34,9 +34,42 @@ const xslFiles = [...new Set(scenarios.flatMap((s) => s.schematron))];
 const xslPaths = Object.fromEntries(
   [...scenariosXml.matchAll(/<validateWithSchematron>[\s\S]*?<location>([^<]+)<\/location>/g)].map((m) => [basename(m[1].trim(), ".xsl"), m[1].trim()]),
 );
+// Korrekturen für SaxonJS-Rechenfehler. SaxonJS rechnet "xs:integer(...) mod 97" bei Zahlen über
+// 2^53 falsch (Genauigkeitsverlust); xs:decimal rechnet exakt. Betroffen ist nur die IBAN-Prüfung
+// xr:checkIBAN (BR-DE-19, BR-DE-20), deren Zahl 20 bis 40 Stellen hat. Jede Ersetzung muss genau
+// einmal greifen, sonst bricht der Build ab (neue KoSIT-Version prüfen).
+const PATCHES = {
+  "XRechnung-UBL-validation": [IBAN_PATCH()],
+  "XRechnung-CII-validation": [IBAN_PATCH()],
+};
+function IBAN_PATCH() {
+  return {
+    reason: "xr:checkIBAN: xs:integer -> xs:decimal (SaxonJS mod 97 ungenau über 2^53)",
+    from: "xs:integer(string-join(for $cp in string-to-codepoints(concat(substring($normalizedIban,5)",
+    to: "xs:decimal(string-join(for $cp in string-to-codepoints(concat(substring($normalizedIban,5)",
+  };
+}
+
+function sourceFor(name) {
+  const original = join(CONFIG, xslPaths[name]);
+  const patches = PATCHES[name];
+  if (!patches) return original;
+  let text = readFileSync(original, "utf8");
+  for (const p of patches) {
+    const count = text.split(p.from).length - 1;
+    if (count !== 1) throw new Error(`${name}: Korrektur "${p.reason}" greift ${count}-mal statt einmal`);
+    text = text.replace(p.from, p.to);
+    console.log(`${name}: ${p.reason}`);
+  }
+  // Neben dem Original ablegen, damit relative Verweise gleich bleiben
+  const patched = original.replace(/\.xsl$/, ".patched.xsl");
+  writeFileSync(patched, text);
+  return patched;
+}
+
 for (const name of xslFiles) {
   const tmp = join(OUT, `${name}.sef.json`);
-  execFileSync("npx", ["xslt3", `-xsl:${join(CONFIG, xslPaths[name])}`, `-export:${tmp}`, "-nogo", "-relocate:on"], { stdio: "inherit" });
+  execFileSync("npx", ["xslt3", `-xsl:${sourceFor(name)}`, `-export:${tmp}`, "-nogo", "-relocate:on"], { stdio: "inherit" });
   const raw = readFileSync(tmp);
   writeFileSync(`${tmp}.gz`, gzipSync(raw, { level: 9 }));
   rmSync(tmp);
