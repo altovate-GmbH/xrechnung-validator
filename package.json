@@ -1,0 +1,69 @@
+{
+  "name": "xrechnung-validator",
+  "version": "0.1.0",
+  "description": "Official KoSIT XRechnung / EN 16931 validation (XSD + Schematron) in pure JavaScript. No Java. Node, Deno, Bun, browser.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "fetch:kosit": "node scripts/fetch-kosit.mjs",
+    "build:rules": "node scripts/build-rules.mjs",
+    "build": "tsc && chmod +x dist/cli.js",
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altovate-GmbH/xrechnung-validator.git"
+  },
+  "keywords": [
+    "xrechnung",
+    "e-rechnung",
+    "einvoice",
+    "e-invoice",
+    "en16931",
+    "zugferd",
+    "factur-x",
+    "kosit",
+    "validator",
+    "schematron",
+    "ubl",
+    "cii",
+    "peppol"
+  ],
+  "author": "altovate GmbH",
+  "license": "Apache-2.0 AND EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/altovate-GmbH/xrechnung-validator/issues"
+  },
+  "homepage": "https://github.com/altovate-GmbH/xrechnung-validator#readme",
+  "dependencies": {
+    "libxml2-wasm": "0.7.2",
+    "saxon-js": "2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.3",
+    "typescript": "5.9.3",
+    "xslt3": "2.7.0"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "xrechnung-validator": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "rules",
+    "NOTICE",
+    "LICENSE",
+    "LICENSES"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  }
+}

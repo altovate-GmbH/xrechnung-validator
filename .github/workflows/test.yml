@@ -1,0 +1,28 @@
+name: test
+on: [push, pull_request]
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "${{ matrix.node }}" }
+      - run: npm ci
+      - run: npm run fetch:kosit
+      - run: npm run build
+      - run: npm test
+  deno-bun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x }
+      - uses: oven-sh/setup-bun@v2
+      - run: npm ci && npm run fetch:kosit && npm run build
+      - run: deno run --allow-read --allow-env --allow-net test/runtime-smoke.mjs
+      - run: bun test/runtime-smoke.mjs

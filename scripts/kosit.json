@@ -1,0 +1,6 @@
+{
+  "_kommentar": "Gepinnte KoSIT-Releases. Bei neuer KoSIT-Version hier anpassen und npm run build:rules ausführen.",
+  "configuration": { "repo": "itplr-kosit/validator-configuration-xrechnung", "tag": "v2026-08-31", "asset": "xrechnung-3.0.2-validator-configuration-2026-08-31.zip", "xrechnung": "3.0.2" },
+  "testsuite": { "repo": "itplr-kosit/xrechnung-testsuite", "tag": "v2026-08-31", "asset": "xrechnung-3.0.2-testsuite-2026-08-31.zip" },
+  "validator": { "repo": "itplr-kosit/validator", "tag": "v1.6.3", "asset": "validator-1.6.3-standalone.jar" }
+}

@@ -1,0 +1,839 @@
+{
+ "validator": "v1.6.3",
+ "configuration": "v2026-08-31",
+ "files": {
+  ".kosit/testsuite/instances/extension/04.01a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung Extension (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "UBL-CR-646|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/extension/04.02a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung Extension (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "UBL-CR-646|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/extension/04.03a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung Extension (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "UBL-CR-646|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/extension/04.04a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung Extension (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information",
+    "UBL-CR-646|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/extension/04.05a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung Extension (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-10|error",
+    "BR-CL-10|error",
+    "BR-CL-10|error",
+    "BR-CL-21|error"
+   ]
+  },
+  ".kosit/testsuite/instances/extension/05.01a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung Extension (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CO-16|error",
+    "BR-DE-TMP-32|information",
+    "UBL-CR-470|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.01a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.01a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.02a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.02a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.03a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.03a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.04a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.04a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.05a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.05a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.06a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.06a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.07a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.07a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.08a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.08a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.09a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.09a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.10a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.10a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.11a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.11a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.12a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.12a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.13a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.13a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.14a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.14a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.15a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.15a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.17a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.17a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/01.18a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.18a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.19a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.19a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.20a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.20a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.21a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/01.21a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.01a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.01a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.02a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.02a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.03a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.03a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.04a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.04a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/02.05a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/02.05a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/02.06a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/02.06a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/03.01a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.01a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.02a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/03.02a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/03.03a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/03.03a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information",
+    "CII-SR-475|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/standard/03.04a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.04a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.05a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.05a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.06a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.06a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.07a-INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/standard/03.07a-INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "CII-SR-475|warning",
+    "CII-SR-476|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.01_comprehensive_test_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.01_comprehensive_test_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "CII-SR-475|warning",
+    "CII-SR-476|warning"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.02_comprehensive_test_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.02_comprehensive_test_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.03_comprehensive_test_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.03_comprehensive_test_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.04_comprehensive_test_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.04_comprehensive_test_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": []
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.05_minimal_test_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.05_minimal_test_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.06_minimal_test_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cius/01.06_minimal_test_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cvd/02.01a-cvd_INVOICE_ubl.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung CVD (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-13|error"
+   ]
+  },
+  ".kosit/testsuite/instances/technical-cases/cvd/02.01a-cvd_INVOICE_uncefact.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung CVD (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-13|error"
+   ]
+  },
+  "test/fixtures/cii-falsche-einheit.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-23|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-falsche-steuerkategorie.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-18|error",
+    "BR-DE-TMP-32|information",
+    "BR-S-08|error"
+   ]
+  },
+  "test/fixtures/cii-falsche-waehrung.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-04|error",
+    "BR-CO-15|error",
+    "BR-DE-TMP-32|information",
+    "PEPPOL-EN16931-R054|error"
+   ]
+  },
+  "test/fixtures/cii-falsches-datumsformat.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-03|error",
+    "BR-DE-TMP-32|information",
+    "BR-TMP-7|warning"
+   ]
+  },
+  "test/fixtures/cii-ohne-buyerref.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-15|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-ohne-verkaeufer-kontakt.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-2|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-ohne-zahlungsart.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-1|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-steuersumme-falsch.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CO-14|error",
+    "BR-CO-15|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/cii-unbekanntes-element.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": true,
+   "messages": []
+  },
+  "test/fixtures/cii-zahlbetrag-falsch.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (CII)",
+   "schemaError": false,
+   "messages": [
+    "BR-CO-16|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-falsche-einheit.xml": {
+   "accept": true,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-23|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-falsche-steuerkategorie.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-18|error",
+    "BR-DE-TMP-32|information",
+    "BR-S-08|error"
+   ]
+  },
+  "test/fixtures/ubl-falsche-waehrung.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CL-04|error",
+    "BR-CO-15|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-falsches-datum.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": true,
+   "messages": []
+  },
+  "test/fixtures/ubl-ohne-buyerref.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-15|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-ohne-email-kaeufer.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-TMP-32|information",
+    "PEPPOL-EN16931-R010|error"
+   ]
+  },
+  "test/fixtures/ubl-ohne-iban.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-61|error",
+    "BR-DE-19|warning",
+    "BR-DE-23-a|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-ohne-rechnungsnummer.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-02|error",
+    "BR-DE-TMP-32|information",
+    "PEPPOL-EN16931-R008|error"
+   ]
+  },
+  "test/fixtures/ubl-ohne-verkaeufer-kontakt.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-2|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-ohne-zahlungsart.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-DE-1|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-steuersumme-falsch.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CO-14|error",
+    "BR-CO-15|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-unbekanntes-element.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": true,
+   "messages": []
+  },
+  "test/fixtures/ubl-zahlbetrag-falsch.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CO-16|error",
+    "BR-DE-TMP-32|information"
+   ]
+  },
+  "test/fixtures/ubl-zeilensumme-falsch.xml": {
+   "accept": false,
+   "scenario": "EN16931 XRechnung (UBL Invoice)",
+   "schemaError": false,
+   "messages": [
+    "BR-CO-10|error",
+    "BR-DE-TMP-32|information",
+    "BR-S-08|error",
+    "PEPPOL-EN16931-R120|warning"
+   ]
+  }
+ }
+}
